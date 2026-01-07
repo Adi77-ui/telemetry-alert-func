@@ -65,6 +65,7 @@ It reflects how alerts are handled in **real production systems**.
     }
   }
 }
+```
 ## Function Behavior
 
 - Parses alert metadata from an Azure Monitor–style payload
