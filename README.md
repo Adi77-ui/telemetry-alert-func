@@ -65,3 +65,47 @@ It reflects how alerts are handled in **real production systems**.
     }
   }
 }
+## Function Behavior
+
+- Parses alert metadata from an Azure Monitor–style payload
+- Logs a structured trace message into Application Insights:
+
+```text
+ALERT FIRED | rule=HighCPU-ProdVM | severity=Sev2
+
+Returns an acknowledgment response to the caller
+
+## 📸 Screenshots (Execution Proof)
+
+### 1️⃣ Alert Logged in Application Insights
+Azure Function logging an incoming alert payload into Application Insights.
+
+![Application Insights Alert Fired Logs](screenshots/app_insights_alert_fired_logs.png)
+
+---
+
+### 2️⃣ Function App HTTP Trigger Enabled
+HTTP-triggered Azure Function deployed and enabled.
+
+![Function App Alert HTTP Enabled](screenshots/function_app_alert_http_enabled.png)
+
+---
+
+### 3️⃣ Function App Overview
+Overview of the deployed Azure Function App and runtime configuration.
+
+![Function App Overview](screenshots/function_app_overview.png)
+
+---
+
+### 4️⃣ Successful Alert Invocation via CLI
+Simulated Azure Monitor alert sent via CLI with successful response.
+
+![Function Invoke Success CLI](screenshots/function_invoke_success_cli.png)
+
+---
+
+### 5️⃣ Resource Group Overview
+All related Azure resources deployed under a single resource group.
+
+![Resource Group Telemetry Alerts Overview](screenshots/resource_group_telemetry_alerts_overview.png)
