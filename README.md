@@ -73,7 +73,7 @@ It reflects how alerts are handled in **real production systems**.
 
 ```text
 ALERT FIRED | rule=HighCPU-ProdVM | severity=Sev2
-
+```
 Returns an acknowledgment response to the caller
 
 ## 📸 Screenshots (Execution Proof)
